@@ -19,9 +19,9 @@ p {
 }
 
 .drum-kit {
-    display: flex; /* Places the buttons on the same row */
-    justify-content: center; /* Centers the buttons horizontally */
-    flex-wrap: wrap; /* Allows buttons to move onto new rows */
+    display: flex; /* Places buttons on the same row */
+    justify-content: center; /* Centers the buttons */
+    flex-wrap: wrap; /* Allows buttons to wrap onto new rows */
     gap: 20px; /* Adds 20px between buttons */
     margin-top: 40px; /* Adds space above the buttons */
 }
@@ -30,8 +30,8 @@ p {
     width: 130px; /* Sets the button width */
     height: 130px; /* Sets the button height */
     border: none; /* Removes the default border */
-    border-radius: 12px; /* Rounds the button corners */
-    color: white; /* Makes the button text white */
+    border-radius: 12px; /* Rounds the corners */
+    color: white; /* Makes the text white */
     font-size: 18px; /* Sets the instrument name size */
     font-weight: bold; /* Makes the text bold */
     cursor: pointer; /* Shows a hand when hovering */
@@ -66,8 +66,12 @@ p {
 }
 
 .drum:hover {
-    transform: scale(1.08); /* Makes the button slightly bigger */
+    transform: scale(1.08); /* Makes the button bigger */
     filter: brightness(1.2); /* Makes the button brighter */
+}
+
+.drum:active {
+    transform: scale(0.95); /* Makes the button shrink when pressed */
 }
 
 /* Adjusts the layout for phones */
