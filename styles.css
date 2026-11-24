@@ -1,0 +1,87 @@
+body {
+    background-color: #181825; /* Sets a dark background */
+    font-family: Arial, sans-serif; /* Sets the text font */
+    color: white; /* Makes the text white */
+    text-align: center; /* Centers the text */
+    margin: 0; /* Removes default spacing */
+    padding: 30px; /* Adds space around the page */
+}
+
+h1 {
+    font-size: 48px; /* Makes the heading large */
+    margin-top: 50px; /* Adds space above the heading */
+    color: #ffcc70; /* Sets a warm yellow heading */
+}
+
+p {
+    font-size: 18px; /* Sets the paragraph size */
+    color: #dddddd; /* Sets a light gray text color */
+}
+
+.drum-kit {
+    display: flex; /* Places the buttons on the same row */
+    justify-content: center; /* Centers the buttons horizontally */
+    flex-wrap: wrap; /* Allows buttons to move onto new rows */
+    gap: 20px; /* Adds 20px between buttons */
+    margin-top: 40px; /* Adds space above the buttons */
+}
+
+.drum {
+    width: 130px; /* Sets the button width */
+    height: 130px; /* Sets the button height */
+    border: none; /* Removes the default border */
+    border-radius: 12px; /* Rounds the button corners */
+    color: white; /* Makes the button text white */
+    font-size: 18px; /* Sets the instrument name size */
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer; /* Shows a hand when hovering */
+    transition: 0.2s; /* Makes visual changes smooth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+}
+
+.key {
+    display: block; /* Places the shortcut on its own line */
+    font-size: 36px; /* Makes the shortcut larger */
+    margin-bottom: 10px; /* Adds space below the shortcut */
+}
+
+.kick {
+    background-color: #d94b65; /* Sets a pink button */
+}
+
+.ride {
+    background-color: #7654c4; /* Sets a purple button */
+}
+
+.snare {
+    background-color: #287cc1; /* Sets a blue button */
+}
+
+.tom {
+    background-color: #25856f; /* Sets a green button */
+}
+
+.hihat {
+    background-color: #bd632b; /* Sets an orange button */
+}
+
+.drum:hover {
+    transform: scale(1.08); /* Makes the button slightly bigger */
+    filter: brightness(1.2); /* Makes the button brighter */
+}
+
+/* Adjusts the layout for phones */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px; /* Makes the heading smaller */
+    }
+
+    .drum {
+        width: 110px; /* Reduces the button width */
+        height: 110px; /* Reduces the button height */
+    }
+
+    body {
+        padding: 15px; /* Reduces page spacing */
+    }
+}
